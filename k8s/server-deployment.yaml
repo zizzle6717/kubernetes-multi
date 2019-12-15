@@ -15,10 +15,6 @@ spec:
       containers:
       - name: server
         image: stephengrider/multi-server
-        resources:
-          limits:
-            memory: "256Mi"
-            cpu: "1000m"
         ports:
         - containerPort: 5000
         env:
