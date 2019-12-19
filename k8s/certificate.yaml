@@ -4,7 +4,7 @@ metadata:
   # TODO: Change this name and make sure everything still works
   name: rili-world-tls
 spec:
-  secretName: rili.world-com
+  secretName: rili-world
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
