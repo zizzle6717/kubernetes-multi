@@ -7,14 +7,14 @@ spec:
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
-  commonName: rili.world.com
+  commonName: rili.world
   dnsNames:
-    - rili.world.com
-    - www.rili.world.com
+    - rili.world
+    - www.rili.world
   acme:
     config:
       - http01:
           ingressClass: nginx
         domains:
-          - rili.world.com
-          - www.rili.world.com
+          - rili.world
+          - www.rili.world
