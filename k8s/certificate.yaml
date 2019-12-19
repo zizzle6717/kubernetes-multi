@@ -1,7 +1,6 @@
 apiVersion: cert-manager.io/v1alpha2
 kind: Certificate
 metadata:
-  # TODO: Change this name and make sure everything still works
   name: rili-world-tls
 spec:
   secretName: rili-world
