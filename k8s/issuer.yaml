@@ -5,7 +5,10 @@ metadata:
 spec:
   acme:
     server: https://acme-v02.api.letsencrypt.org/directory
-    email: 'rili.main@gmail.com'
+    email: "rili.main@gmail.com"
     privateKeySecretRef:
       name: letsencrypt-prod
-    http01: {}
+    solvers:
+      - http01:
+        ingress:
+          class: nginx
